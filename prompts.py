@@ -41,6 +41,9 @@ Scenario:
 User's final response:
 "{final_response}"
 
+Use the following rubric when scoring traits…
+{}
+
 Evaluate the response on these traits:
 - Assertiveness
 - Empathy
@@ -50,17 +53,18 @@ Evaluate the response on these traits:
 
 Rules:
 - Each trait must be scored: +2, +1, 0, -1, or -2
+- Add a Trait explanation using Human Logic
 - Give ONE clear strength
 - Give ONE clear improvement suggestion
 
 Return the output in EXACTLY this format:
 
 Trait Scores:
-Assertiveness: <score>
-Empathy: <score>
-Clarity: <score>
-Self-Respect: <score>
-Emotional Control: <score>
+Assertiveness: <score> - <explanation in 1 sentence>
+Empathy: <score> - <explanation in 1 sentence>
+Clarity: <score> - <explanation in 1 sentence>
+Self-Respect: <score> - <explanation in 1 sentence>
+Emotional Control: <score> - <explanation in 1 sentence>
 
 Feedback:
 Strength: <one sentence>
