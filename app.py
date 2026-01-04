@@ -53,7 +53,7 @@ with st.spinner("The teammate responds..."):
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
-        temperature=0.7
+        temperature=0.5 # temperature lower for consistency or higher for realism
     )
 
 ai_pushback = pushback.choices[0].message.content
