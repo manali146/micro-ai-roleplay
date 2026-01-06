@@ -41,9 +41,6 @@ Scenario:
 User's final response:
 "{final_response}"
 
-Use the following rubric when scoring traits…
-{}
-
 Evaluate the response on these traits:
 - Assertiveness
 - Empathy
@@ -59,16 +56,21 @@ Rules:
 
 Return the output in EXACTLY this format:
 
-Trait Scores:
-Assertiveness: <score> - <explanation in 1 sentence>
-Empathy: <score> - <explanation in 1 sentence>
-Clarity: <score> - <explanation in 1 sentence>
-Self-Respect: <score> - <explanation in 1 sentence>
-Emotional Control: <score> - <explanation in 1 sentence>
-
 Feedback:
 Strength: <one sentence>
 Improvement: <one sentence>
+    
+Trait Scores:
+Assertiveness: <score> - <explanation in 1 sentence>
+
+Empathy: <score> - <explanation in 1 sentence>
+
+Clarity: <score> - <explanation in 1 sentence>
+
+Self-Respect: <score> - <explanation in 1 sentence>
+    
+Emotional Control: <score> - <explanation in 1 sentence>
+
 """
 
     return system_prompt, user_prompt
